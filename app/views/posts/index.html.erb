@@ -4,7 +4,9 @@
   <ul>
     <% @posts.each do |post| %>
       <%= link_to post do %>
-        <p><%= post.id %> <%= post.author %> </p>
+        <li class='list-group-item'>
+          <p><%= post.id %> <%= post.author %> </p>
+        </li>
       <% end %>
     <% end %>
   </ul>
