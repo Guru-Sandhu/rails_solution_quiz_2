@@ -1,0 +1,13 @@
+<h1>Post Index Page</h1>
+
+<div>
+  <ul>
+    <% @posts.each do |post| %>
+      <%= link_to post do %>
+        <li class='list-group-item'>
+          <p><%= post.id %> <%= post.author %> </p>
+        </li>
+      <% end %>
+    <% end %>
+  </ul>
+</div>
